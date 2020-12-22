@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+<style>
+* {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+a img {border: 0;}
+html {overflow-x: hidden; overflow-y: scroll;}
+header {overflow: auto;}
+    header h1 {text-align: center; padding: 30px 0 10px;}
+    .top_left {padding: 20px; position: absolute; top: 0;}
+    .top_right {float: right; position: absolute; right: 20px; padding: 27px; top: 0;}
+    .top_right img {width: 20px}
+    label {font-size: 0.7em;}
+    .country {width: 100px; padding: 10px 20px; border: none; font-size: 0.8em;}
+    .country:hover {border: 1px solid rgb(219, 219, 219)}
+    .country span {font-family: Arial,sans-serif;}
+nav {overflow: auto;}
+    .container {width: 930px; margin: 0 auto;}
+    .nav {overflow: auto;}
+    .nav li {float: left; padding: 25px 33px;}
+    .nav li a {font-size: 0.75em; font-family: Arial,sans-serif; color: black; text-decoration: none;}
+    .nav li a:hover {border-bottom: 1px solid black;}
+    .submenu {overflow: auto; font-size: 0.8em; position: absolute; background: white; padding-top: 10px; height: 330px; width: 100%; border-top: 1px solid rgb(204, 204, 204);}
+    .submenu li {display: inline-block; padding: 20px 5px 0; text-align: center;}
+    .submenu li img {width: 170px;}
+    .submenu li span {display: block; padding: 10px; text-align: center; font-size: 0.8em; color:#000;}
+    .submenu li a {text-decoration: none;}
+    .submenu li span a:hover {border-bottom: 1px solid black;}
+section {}
+    .sec video {width: 100%; margin-bottom: 20px;}
+    .sec img {width: 100%; margin-bottom: 20px;}
+    .sec1_text img {position: relative; left: 50%; transform: translate(-50%); top: -240px; width: 800px; z-index: 9}
+    .sec1_border a{position: relative; left: 47%;  top: -210px;  z-index: 3; color: white; text-decoration: none; border-bottom: 1px solid white; font-size: 0.9em;}
+    .sec2_text img {position: relative; left: 50%; transform: translate(-50%); top: -200px; width: 400px; z-index: 3}
+    .sec2_border a {position: relative; left: 47%;  top: -190px;  z-index: 3; color: white; text-decoration: none; border-bottom: 1px solid white; font-size: 0.9em;}
+    .sec3_text img {position: relative; left: 50%; transform: translate(-50%); top: -200px; width: 400px; z-index: 3}
+    .sec3_border a {position: relative; left: 47%;  top: -190px;  z-index: 3; color: white; text-decoration: none; border-bottom: 1px solid white; font-size: 0.9em;}
+    .sec4_border a {position: relative; left: 47%;  top: -100px;  z-index: 3; color: white; text-decoration: none; border-bottom: 1px solid white; font-size: 0.9em;}
+    .sec5_border a {position: relative; left: 47%;  top: -100px;  z-index: 3; color: white; text-decoration: none; border-bottom: 1px solid white; font-size: 0.9em;}
+    section div p.border {color: white; position: absolute;}
+footer {background: #f0e9dc; margin-top: 20px;}
+    .footer {overflow: auto; padding: 70px 40px}
+    .footer ul {float: left; width: 22%; font-size: 0.8em;}
+    .footer ul li {padding-top: 20px;}
+    .footer span {font-size: 0.7em; color: #777}
+    .footer i {font-size: 1.8em; padding: 0 20px; color: #777}
+    .search {margin-left: 100px;}
+    .search li {padding: 10px;}
+    .search i {font-size:0.8em; padding: 3px;}
+    .address {width: 25%; margin: 0 auto; font-style: normal; color: #000; padding-bottom: 30px;}
+</style>
+</head>
+<body>
+<header>
+    <h1><img src="images/logo.png" alt=""></h1>
+    <div class="top_left">
+        <label for="country">LOCATION:</label>
+        <select class="country" name="country">
+            <option value="korea"><span>Korea</span></option>
+            <option value="china"><span>China</span></option>
+            <option value="japan"><span>Japan</span></option>
+            <option value="australia"><span>Australia</span></option>
+            <option value="canada"><span>Canada</span></option>
+            <option value="usa"><span>USA</span></option>
+            <option value="india"><span>India</span></option>
+        </select>
+    </div>
+    <div class="top_right">
+        <a href="#"><img src="images/store_locator_icon.svg" alt=""></a>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul class="nav">        
+            <li class="btn1"><a href="#">THE POLO SHIRT</a></li>
+            <li class="btn2"><a href="#">MEN</a></li>
+            <li class="btn3"><a href="#">WOMEN</a></li>
+            <li class="btn4"><a href="#">CHILDREN</a></li>
+            <li class="btn5"><a href="#">WORLD OF RALPH LAUREN</a></li>
+            <li class="btn6"><a href="#">SHOP ONLINE</a></li>
+        </ul>
+    </div>
+    <div class="submenu">
+      <div class="container">
+        <ul class="sub1 sub">
+                <li><a href="#"><img src="images/1.png" alt="">
+                    <span>THE POLO SHIRT STORY</span></a></li>
+                <li><a href="#"><img src="images/2.png" alt="">
+                    <span>THE POLO SHIRT</span></a></li>
+                <li><a href="#"><img src="images/3.png" alt="">
+                    <span>THE POLO SHIRT COLORS</span></a></li>
+                <li><a href="#"><img src="images/4.png" alt="">
+                    <span>POLO LIFESTYLE</span></a></li>
+            </ul>
+            <ul class="sub2 sub">
+                <li><a href="#"><img src="images/5.png" alt="">
+                    <span>POLO RALPH LAUREN</span></a></li>
+                <li><a href="#"><img src="images/6.png" alt="">
+                    <span>PURPLE LABEL</span></a></li>
+                <li><a href="#"><img src="images/7.png" alt="">
+                    <span>THE ICONS SHOP</span></a></li>
+                <li><a href="#"><img src="images/8.jpg" alt="">
+                    <span>THE GENTS' SHOP</span></a></li>
+                <li><a href="#"><img src="images/9.png" alt="">
+                    <span>POLO DENIM</span></a></li>
+                <li><a href="#"><img src="images/10.jpg" alt="">
+                    <span>WATCHES & JEWELRY</span></a></li>
+                <li><a href="#"><img src="images/11.png" alt="">
+                    <span>EARTH POLO</span></a></li>
+                <li><a href="#"><img src="images/12.png" alt="">
+                    <span>EARTH POLO IG FILTER</span></a></li>
+                <li><a href="#"><img src="images/13.png" alt="">
+                    <span>UNDERWEAR</span></a></li>
+            </ul>
+            <ul class="sub3 sub">
+                <li><a href="#"><img src="images/14.png" alt="">
+                    <span>POLO RALPH LAUREN</span></a></li>
+                <li><a href="#"><img src="images/15.png" alt="">
+                    <span>RALPH LAUREN COLLECTION</span></a></li>
+                <li><a href="#"><img src="images/16.png" alt="">
+                    <span>POLO DENIM</span></a></li>
+                <li><a href="#"><img src="images/17.png" alt="">
+                    <span>LAUREN</span></a></li>
+                <li><a href="#"><img src="images/18.jpg" alt="">
+                    <span>WATCHES & JEWELRY</span></a></li>
+                <li><a href="#"><img src="images/19.png" alt="">
+                    <span>BELLPORT BAG</span></a></li>
+                <li><a href="#"><img src="images/20.png" alt="">
+                    <span>EARTH POLO</span></a></li>
+                <li><a href="#"><img src="images/21.png" alt="">
+                    <span>EARTH POLO IG FILTER</span></a></li>
+            </ul>
+            <ul class="sub4 sub">
+                <li><a href="#"><img src="images/22.png" alt="">
+                    <span>POLO RALPH LAUREN</span></a></li>
+                <li><a href="#"><img src="images/23.png" alt="">
+                    <span>RALPH LAUREN BABY</span></a></li>
+            </ul>
+            <ul class="sub5 sub">
+                <li><a href="#"><img src="images/24.png" alt="">
+                    <span>ABOUT</span></a></li>
+                <li><a href="#"><img src="images/25.png" alt="">
+                    <span>RL50</span></a></li>
+                <li><a href="#"><img src="images/26.jpg" alt="">
+                    <span>FLAGSHIPS</span></a></li>
+                <li><a href="#"><img src="images/27.jpg" alt="">
+                    <span>RESTAURANTS</span></a></li>
+                <li><a href="#"><img src="images/28.jpg" alt="">
+                    <span>RL STYLE</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="sec1 sec">
+        <video autoplay="" loop="" muted="" playsinline="" style="min-width:100%; min-height:100%;"><source src="images/desktop-1440x720.mp4" type="video/mp4"></video>
+        <p class="sec1_text"><img src="images/text1.png" alt=""></p>
+        <p class="sec1_border"><a href>지금 둘러보기</a></p>
+    </div>
+    <div class="sec2 sec">
+        <img src="images/gift.jpg" alt="">
+        <p class="sec2_text"><img src="images/text2.png" alt=""></p>
+        <p class="sec2_border"><a href>지금 둘러보기</a></p>
+    </div>
+    <div class="sec3 sec">
+        <video autoplay="" loop="" muted="" playsinline="" style="min-width:100%; min-height:100%;"><source src="images/HORIZONTALRL.mp4" type="video/mp4"></video>
+        <p class="sec3_text"><img src="images/text3.png" alt=""></p>
+        <p class="sec3_border"><a href>지금 둘러보기</a></p>
+    </div>
+    <div class="sec4 sec">
+        <img src="images/HP_banner.png" alt="">
+        <p class="sec4_border"><a href>MEN</a></p>
+        <p class="sec4_border"><a href>WOMEN</a></p>
+    </div>
+    <div class="sec5 sec">
+        <img src="images/HP_banner_CW.png" alt="">
+        <p class="sec5_border"><a href>EXPLORE NOW</a></p>
+    </div>
+</section>
+<footer>
+    <div class="footer">
+        <ul>CONTACT
+            <li><i class="fas fa-mobile-alt"></i>
+                <span>고객지원부:
+                     <br>080-566-1199</span></li>
+            <li><i class="fas fa-envelope"></i><span>이메일 문의</span></li>
+        </ul>
+        <ul>FOLLOW US
+            <li><i class="fab fa-facebook"></i><span>Facebook</span></li>
+            <li><i class="fab fa-instagram-square"></i><span>Instagram</span></li>
+            <li><i class="fab fa-twitter-square"></i><span>Twitter</span></li>
+        </ul>
+        <ul>놓치지 마세요
+            <li><span>랄프 로렌의 최신 스타일과 독점 혜택 등 <br> 다양한 소식을 이메일로 받아보세요.</span></li>
+            <li>
+                <input type="checkbox" id="sexual" name="sexual" value="남성">
+                <label for="sexual">남성</label>
+                <input type="checkbox" id="sexual" name="sexual" value="여성">
+                <label for="sexual">여성</label>
+            </li>
+            <li>
+                <input type="email" id="email" name="email" placeholder="이메일 주소">
+                <input type="submit" value="등록">
+            </li>
+        </ul>
+        <ul class="search">매장 찾기
+            <li>
+                <input type="text" id="search" name="search" placeholder="위치별 검색"><a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li><a href="#"><span>현 위치로 검색</span></a></li>
+         
+            <li>
+                <select id="brand" name="brand"> 
+                    <option value="All Brands">All Brands</option>
+                    <option value="Ralph Lauren">Ralph Lauren</option>
+                    <option value="Polo Ralph Lauren">Polo Ralph Lauren</option>
+                    <option value="Ralph Lauren Children">Ralph Lauren Children</option>
+                    <option value="Watches & Jewelry">Watches & Jewelry</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <div class="address">Copyright 2008-2020 Ralph Lauren</div>
+</footer>
+
+<script>
+    $(function(){
+
+         $(".submenu").slideUp(0);
+     $(".nav li, .submenu li").hover(function(){
+       $(".submenu").stop().slideDown(100);
+     },function(){
+       $(".submenu").stop().slideUp(100);   
+     })
+
+     $(".btn1").hover(function(){
+       $(".sub1").show();
+       $(".sub2, .sub3, .sub4, .sub5").hide();
+     })
+
+     $(".btn2").hover(function(){
+       $(".sub2").show();
+       $(".sub1, .sub3, .sub4, .sub5").hide();
+     })
+
+     $(".btn3").hover(function(){
+       $(".sub3").show();
+       $(".sub1, .sub2, .sub4, .sub5").hide();
+     })
+
+     $(".btn4").hover(function(){
+       $(".sub4").show();
+       $(".sub1, .sub2, .sub3, .sub5").hide();
+     })
+
+     $(".btn5").hover(function(){
+       $(".sub5").show();
+       $(".sub1, .sub2, .sub3, .sub4").hide();
+     })
+
+     $(".btn6").hover(function(){
+        $(".submenu").hide();
+     })
+
+
+    })
+
+</script>
+</body>
+</html>
